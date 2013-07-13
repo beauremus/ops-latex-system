@@ -1,0 +1,35 @@
+___________________
+The bidi package
+v12 (Final Version)
+
+This package provides a convenient interface for typesetting
+bidirectional texts in Plain TeX and LaTeX.
+
+In this version, a new experimental package, namely,
+bidi-longtable.sty is provided for typesetting bidirectional
+longtables with longtable package. bidi-longtable.sty should
+be loaded after bidi package.This is the final version of bidi
+package and no more updates of bidi package will appear.
+I am working on a commercial package (namely Simurgh,
+for typesetting high quality Persian/English documents with
+LuaTeX, which does not have bugs and limitations of bidi
+package) and therefore do not wish to continue the
+development of bidi package. Hence you may like to consider
+bidi as obsolete and may wish to purchase a copy of Simurgh
+package. If you are interested to purchase a copy of Simurgh
+package, then send me an email. Please do not email me with
+questions/queries about bugs/limitations/usage of bidi package;
+I am not interested in those emails and your email will be deleted
+immediately without replying back.
+
+___________________
+Vafa Khalighi
+vafak12@gmail.com
+
+Copyright © 2007–2012
+It may be distributed and/or modified under the LaTeX Project Public License,
+version 1.3c or higher (your choice). The latest version of
+this license is at: http://www.latex-project.org/lppl.txt
+
+This work is “author-maintained” (as per LPPL maintenance status)
+by Vafa Khalighi.

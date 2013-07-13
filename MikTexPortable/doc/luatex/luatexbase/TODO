@@ -1,0 +1,48 @@
+Next actions
+------------
+
+1. Do the catcode table stack à la luatex.sty.
+2. Merge with luatex.sty (inc test suite).
+3. Coordinate release with Heiko.
+
+test suite
+----------
+
+- regression checks on the results of the tests (sed+diff the log)
+- add debug messages to be used in the test suite?
+- import test files from luatex.sty
+
+luatex.sty
+----------
+
+- do it (depends on cctb update)
+- provide \newcatcodetable & all for now, used in l3luatex.sty (to be
+  investigated), with a depcracation warning
+
+compat
+------
+
+- clarify doc/comments about relying on etex/pdf primitives
+- import some error checking from Heiko's \LuT@MakeLuatexPrimitive
+
+modutils
+--------
+
+- make `\listfiles` show Lua modules?
+
+cctb
+----
+
+- stack à la luatex.sty
+- support for unicode-letters?
+
+mcb
+---
+
+- add an analogue of `callback.find()`, see #4
+
+bytecode registers
+------------------
+
+- create submodule for that
+- only lua interface, most probably

@@ -1,0 +1,114 @@
+\contentsline {chapter}{\numberline {1}General Information}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Experiments}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Meson Test}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Meson Center}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}SeaQuest}{1}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Geography}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Main Injector}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}P1 line}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}P2 line}{3}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}P3 line}{3}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Switchyard}{3}{subsection.1.2.5}
+\contentsline {subsubsection}{Note about Enclosures C, D, and E}{4}{section*.2}
+\contentsline {subsection}{\numberline {1.2.6}Meson}{4}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}Neutrino}{5}{subsection.1.2.7}
+\contentsline {section}{\numberline {1.3}Switchyard Enclosure Map}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Meson Enclosures Map}{9}{section.1.4}
+\contentsline {section}{\numberline {1.5}Proton Area Map}{11}{section.1.5}
+\contentsline {section}{\numberline {1.6}Neutrino Area Map}{13}{section.1.6}
+\contentsline {section}{\numberline {1.7}Naming Convention}{14}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Switchyard}{14}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Fixed Target}{14}{subsection.1.7.2}
+\contentsline {subsubsection}{Note about M03/M04}{14}{section*.3}
+\contentsline {subsubsection}{Service Buildings}{14}{section*.4}
+\contentsline {chapter}{\numberline {2}Meson Modes}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Meson Center}{15}{section.2.1}
+\contentsline {subsubsection}{MCenter Pion Beam Mode}{15}{section*.5}
+\contentsline {subsubsection}{MCenter Proton Beam Mode}{16}{section*.6}
+\contentsline {section}{\numberline {2.2}Meson Test}{16}{section.2.2}
+\contentsline {subsubsection}{MTest Proton Mode}{16}{section*.7}
+\contentsline {subsubsection}{MTest Pion Mode}{16}{section*.8}
+\contentsline {subsubsection}{MTest Low Energy Pion Mode}{16}{section*.9}
+\contentsline {chapter}{\numberline {3}Magnets and Septa}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lambertsons}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Septa}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}EPBs}{19}{section.3.3}
+\contentsline {section}{\numberline {3.4}3Q120 Quads}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}4Q120 Quads}{20}{section.3.5}
+\contentsline {section}{\numberline {3.6}Main Ring B2 Dipoles and Quads}{20}{section.3.6}
+\contentsline {section}{\numberline {3.7}Trims}{20}{section.3.7}
+\contentsline {chapter}{\numberline {4}Power Supplies}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Ramping Magnet Power Supplies}{22}{section.4.1}
+\contentsline {subsubsection}{Note}{22}{section*.10}
+\contentsline {chapter}{\numberline {5}Diagnostics}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}P1 and P2 Beamline Diagnostics}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}P3 Beamline Diagnostics}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Switchyard Beamline Diagnostics}{26}{section.5.3}
+\contentsline {section}{\numberline {5.4}Secondary Emission Monitors}{26}{section.5.4}
+\contentsline {section}{\numberline {5.5}Meson Area Beam Diagnostics}{27}{section.5.5}
+\contentsline {chapter}{\numberline {6}Controls}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}CAMAC Link}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}QXR VME}{32}{section.6.2}
+\contentsline {chapter}{\numberline {7}Utilities}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Vacuum}{33}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Vacuum Components}{33}{subsection.7.1.1}
+\contentsline {subsubsection}{Pirani Gauges}{33}{section*.11}
+\contentsline {subsubsection}{Cold Cathode Gauges}{34}{section*.12}
+\contentsline {subsubsection}{Mechanical Pumps}{34}{section*.13}
+\contentsline {subsubsection}{Ion Pumps}{34}{section*.14}
+\contentsline {subsubsection}{CIA Crates}{35}{section*.15}
+\contentsline {section}{\numberline {7.2}LCW}{35}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Switchyard}{35}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Meson LCW}{35}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}MS2 LCW}{35}{subsection.7.2.3}
+\contentsline {subsubsection}{System Operation}{35}{section*.16}
+\contentsline {subsection}{\numberline {7.2.4}MS4 LCW}{38}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}MS6 LCW}{38}{subsection.7.2.5}
+\contentsline {subsubsection}{System Operation}{38}{section*.17}
+\contentsline {subsection}{\numberline {7.2.6}Meson RAW}{38}{subsection.7.2.6}
+\contentsline {subsubsection}{M01 RAW System Operation}{38}{section*.18}
+\contentsline {subsubsection}{System Features}{38}{section*.19}
+\contentsline {subsection}{\numberline {7.2.7}Neutrino LCW}{40}{subsection.7.2.7}
+\contentsline {subsection}{\numberline {7.2.8}NS1 LCW}{40}{subsection.7.2.8}
+\contentsline {subsection}{\numberline {7.2.9}NS2 LCW}{40}{subsection.7.2.9}
+\contentsline {subsection}{\numberline {7.2.10}Neutrino Muon RAW System}{40}{subsection.7.2.10}
+\contentsline {subsection}{\numberline {7.2.11}Composition of a Water System}{40}{subsection.7.2.11}
+\contentsline {subsubsection}{LCW (Low Conductivity Water)}{40}{section*.20}
+\contentsline {subsubsection}{ICW (Industrial Cooling Water)}{40}{section*.21}
+\contentsline {subsubsection}{Pre-Strainer}{40}{section*.22}
+\contentsline {subsubsection}{String Filters}{40}{section*.23}
+\contentsline {subsubsection}{Deionizing Loop}{42}{section*.24}
+\contentsline {subsubsection}{Resistivity Meter}{42}{section*.25}
+\contentsline {subsubsection}{3-way Makeup Valve}{42}{section*.26}
+\contentsline {subsubsection}{Expansion Tank}{42}{section*.27}
+\contentsline {subsubsection}{LCW Pumps}{42}{section*.28}
+\contentsline {subsubsection}{Variable Speed Controller}{42}{section*.29}
+\contentsline {subsubsection}{Water-to-Water Heat Exchanger}{43}{section*.30}
+\contentsline {subsubsection}{Water-to-Air Cooling Towers}{43}{section*.31}
+\contentsline {subsubsection}{Water-to-Water Heat Exchanger with Air Cooling Towers}{43}{section*.32}
+\contentsline {subsubsection}{Air Compressor}{43}{section*.33}
+\contentsline {subsubsection}{Pressure Regulated Valve}{43}{section*.34}
+\contentsline {subsubsection}{Pressure Gauges, Pressure Controller and Pressure Switch}{43}{section*.35}
+\contentsline {subsubsection}{Controls Box}{43}{section*.36}
+\contentsline {subsubsection}{Flow Probes}{44}{section*.37}
+\contentsline {subsubsection}{Temperatures Probes and Gauges}{44}{section*.38}
+\contentsline {chapter}{\numberline {A}Beamline Maps}{45}{appendix.A}
+\contentsline {chapter}{\numberline {B}Power Supplies}{54}{appendix.B}
+\contentsline {section}{\numberline {B.1}Power Supplies}{54}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Transex 500kW}{54}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Transex 240kW}{55}{subsection.B.1.2}
+\contentsline {subsection}{\numberline {B.1.3}Ling}{55}{subsection.B.1.3}
+\contentsline {subsection}{\numberline {B.1.4}ACME}{56}{subsection.B.1.4}
+\contentsline {subsection}{\numberline {B.1.5}P=EI 20kW}{56}{subsection.B.1.5}
+\contentsline {subsection}{\numberline {B.1.6}Glassman}{57}{subsection.B.1.6}
+\contentsline {subsection}{\numberline {B.1.7}4-Quadrant Corrector Supplies}{57}{subsection.B.1.7}
+\contentsline {section}{\numberline {B.2}Trim Chassis Inventory}{57}{section.B.2}
+\contentsline {section}{\numberline {B.3}Switchyard Power Supplies and Loads}{57}{section.B.3}
+\contentsline {chapter}{\numberline {C}CAMAC Cards in Switchyard}{65}{appendix.C}
+\contentsline {chapter}{\numberline {D}History}{68}{appendix.D}
+\contentsline {section}{\numberline {D.1}Historical Note: Border Dispute}{68}{section.D.1}
+\contentsline {chapter}{\numberline {E}Naming Convention}{69}{appendix.E}
+\contentsline {section}{\numberline {E.1}Switchyard}{69}{section.E.1}
+\contentsline {section}{\numberline {E.2}Fixed Target}{70}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Note about M03/M04}{73}{subsection.E.2.1}
+\contentsline {subsubsection}{Service Buildings}{73}{section*.39}

@@ -1,0 +1,41 @@
+\contentsline {chapter}{Fermilab Accelerator Complex}{15}{chapter*.5}
+\contentsline {section}{Layout of the Accelerators}{15}{section*.6}
+\contentsline {chapter}{Proton Source}{17}{chapter*.7}
+\contentsline {section}{Machine Cycle and RF Cycle}{17}{section*.8}
+\contentsline {section}{Typefaces}{20}{section*.9}
+\contentsline {section}{Headings}{20}{section*.10}
+\contentsline {paragraph}{Paragraph}{20}{paragraph*.11}
+\contentsline {section}{Environments}{21}{section*.12}
+\contentsline {chapter}{On the Use of the tufte-book Document Class}{23}{chapter*.13}
+\contentsline {section}{Page Layout}{23}{section*.14}
+\contentsline {subsection}{Headings}{23}{subsection*.15}
+\contentsline {section}{Sidenotes}{23}{section*.16}
+\contentsline {section}{References}{24}{section*.17}
+\contentsline {section}{Figures and Tables}{25}{section*.18}
+\contentsline {section}{Captions}{27}{section*.19}
+\contentsline {paragraph}{Vertical alignment}{27}{paragraph*.20}
+\contentsline {paragraph}{Horizontal alignment}{27}{paragraph*.21}
+\contentsline {section}{Full-width text blocks}{28}{section*.22}
+\contentsline {section}{Typography}{28}{section*.23}
+\contentsline {subsection}{Typefaces}{28}{subsection*.24}
+\contentsline {subsection}{Letterspacing}{28}{subsection*.25}
+\contentsline {section}{Document Class Options}{28}{section*.26}
+\contentsline {chapter}{Customizing Tufte-LaTeX}{31}{chapter*.27}
+\contentsline {section}{File Hooks}{31}{section*.28}
+\contentsline {section}{Numbered Section Headings}{31}{section*.29}
+\contentsline {section}{Changing the Paper Size}{32}{section*.30}
+\contentsline {section}{Customizing Marginal Material}{32}{section*.31}
+\contentsline {chapter}{Compatibility Issues}{35}{chapter*.32}
+\contentsline {section}{Converting from \texttt {article} to \texttt {tufte-handout}}{35}{section*.33}
+\contentsline {section}{Converting from \texttt {book} to \texttt {tufte-book}}{35}{section*.34}
+\contentsline {chapter}{Troubleshooting and Support}{37}{chapter*.35}
+\contentsline {section}{Tufte-\LaTeX \xspace Website}{37}{section*.36}
+\contentsline {section}{Tufte-\LaTeX \xspace Mailing Lists}{37}{section*.37}
+\contentsline {paragraph}{Discussion list}{37}{paragraph*.38}
+\contentsline {paragraph}{Commits list}{37}{paragraph*.39}
+\contentsline {section}{Getting Help}{37}{section*.40}
+\contentsline {section}{Errors, Warnings, and Informational Messages}{38}{section*.41}
+\contentsline {section}{Package Dependencies}{38}{section*.42}
+\contentsline {chapter}{Bibliography}{41}{chapter*.43}
+\contentsline {chapter}{Index}{43}{chapter*.44}
+\contentsfinish 

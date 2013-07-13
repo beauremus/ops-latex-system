@@ -1,0 +1,22 @@
+                        History of the lualibs package
+2011/01/20 v0.96
+    * Fix computability with lfs in luatex 0.65
+
+2010/06/28 v0.95
+    * don't use kpse.set_program_name(), people loading lualibs with texlua
+      should set it themselves, to avoid possible clashes
+    * drop deprecated functions and aliases
+    * update the documentation
+
+2010/05/28 v0.94
+    * sync with ConTeXt beta 2010.05.20, adding new functions used
+      by luaotfload
+
+2010/05/10 v0.93
+    * renamed the package from luaextra to lualibs
+    * now a separate package (previously part of the luatextra bundle)
+
+2010/01/10 v0.92
+    * making the file loadable without luatextra (useful for lua scripts)
+    * fixing typo in localize_sep
+

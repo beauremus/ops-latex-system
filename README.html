@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rookie Book Editing | LaTeX</title>
+		<link rel="stylesheet" href="README/css/style.css" type="text/css" media="screen" />
+		<link rel="shortcut icon" type="image/png" href="http://www-opswiki.fnal.gov/fermilogo.png" />
+		<script src="README/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="README/js/jquery.tableofcontents.min.js" type="text/javascript"></script>
+		<script src="README/js/README.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+		<div id="tocbutton">ToC</div>
+		<ul href="#" id="toc" class="hide"></ul>
+	
+		<div class="wrapper" id="header"> 
+			<div class="container">
+				<h1 id="the_title">How to Edit Rookie Books with <span id="latex">L<sup>a</sup>T<sub>e</sub>X</span></h1>
+			</div>
+		</div>		
+		
+		<div class="wrapper" id="content"> 
+			<div class="container">
+				
+				<div class="note">
+				The quickest method for diving into LaTeX with the Rookie Books is to look at the files that already exist. They are wonderful examples for commands and file structure. This document may give you a bit more detail.
+				</div>
+				
+				<h2 id="what_is_latex">What is LaTeX</h2>
+				
+					<p>LaTeX (pronounced lay-tech or lah-tech) is a markup language used to typeset documents. Just as with HTML, editing is done in a text file and the product is rendered through another medium.<br />
+					HTML &rarr; Browser | LaTeX &rarr; PDF</p>
+				
+				<h2 id="advantages_of_latex">Advantages of LaTeX</h2>
+				
+					<ul class="indent">
+						<li>Only need to learn commands for basic document structure; little need to tinker with the layout of the document.
+						<li>Allows you to focus on the content rather than the appearance of your document.
+						<li>Easy to typeset complex mathematical formulas.
+						<li>Tedious elements like table of contents; lists of figures and tables; numbering of sections, tables, and figures; bulleted/enumerated lists; footnote numbers; cross-reference numbers; and bibliographies are automatically generated AND updated when the document changes.
+						<li>Facilitates consistent presentation of documents.
+						<li>Easy to scale your document to create a very large one.
+						<li>Portability of the input file (simple text file) and of the output file produced (PDF).
+						<li>Professional quality output.
+						<li>Stability - LaTeX never crashes or corrupts your files.
+					</ul>
+					
+				<h2 id="producing_simple_doc">Producing a Simple Document</h2>
+				
+					<p>LaTeX files are simply text files. These text files are interpreted by a compiler into your PDF output document. (Feel free to look at all of these text files in your text editor to see the structure)</p>
+					
+					<p>Some common file extensions that you will see are:</p>
+					
+					<ul class="indent">
+						<li>.tex (LaTeX input file that defines content and specific formatting)
+						<li>.sty (Style guide file; contains packages(plugins) and document-wide formatting)
+						<li>.bib (Bibliography database file)
+						<li>.pdf (Typical Adobe Acrobat file; the output of LaTeX)
+						<li>.log (Compile log; for reviewing and troubleshooting compilation)
+						<li>.aux (An auxiliary file that saves information for the creation of table of contents, references, indices, bibliographies and other things like that.)
+					</ul>
+					<br />
+					<ul class="indent">
+						<li>Images (may be in any of the following formats)
+						<ul>
+							<li>.jpg
+							<li>.png
+							<li>.pdf
+						</ul>
+					</ul>
+						
+				
+					<div class="note">
+					All of the materials for editing the <a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/OpsRookieBooks/">Ops Rookie Books</a> can be found on beamssrv1; also known as the Y Drive of your remote desktop. <a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/">Y:\Public\rookiebooks\</a>
+					</div>
+					
+					<h3 id="file_structure">File Structure</h3>
+						
+						<p>This Concepts Rookie Book setup represents a basic file structure of every rookie book folder.</p> 
+
+						<ul class="indent">
+							<li><a href="file://///beamssrv1.fnal.gov/operations.bd/">\\beamssrv1.fnal.gov\operations.bd\</a>
+							<ul>
+								<li><a href="file://///beamssrv1.fnal.gov/operations.bd/Public/">Public\</a>
+								<ul>
+									<li><a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/">rookiebooks\</a>
+									<ul>
+										<li><a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/OpsRookieBooks/">OpsRookieBooks\</a>
+										<ul>
+											<li><a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/OpsRookieBooks/ConceptsTeX/">ConceptsTeX\</a>
+											<ul>
+												<li>img\ (folder for storing images)
+												<li>tex\ (folder for storing .tex chapter files)
+												<ul>
+													<li>con_chap1.tex (chapter 1 content)
+													<li>con_chap1.aux (LaTeX generated content)
+													<li>con_chap2.tex (chapter 2 content)
+													<li>con_chap2.aux
+												</ul>
+												<li>concepts.tex (content and formatting)
+												<li>concepts.pdf (the output after compiling a .tex file; the product) 
+											</ul>			
+											<li>rbstyle.sty (the style guide for the books)
+											<li>citations.bib (bibliography references)
+											<li>definitions.tex (glossary definitions)
+										</ul>
+									</ul>
+								</ul>
+							</ul>
+						</ul>
+
+					<h3 id="doc_structure">Document Structure</h3>
+
+						<ul class="indent">
+							<li>Table of Contents
+							<li>List of Figures
+							<li>List of Tables
+								<ul>
+									<li>Part (this won't be used often)
+									<ul>
+										<li>Chapter 
+										<ul>
+											<li>Section
+											<ul>
+												<li>Subsection
+												<ul><li>Subsubsection</ul>
+											</ul>
+										</ul>
+										<li>Appendix
+									</ul>
+								</ul>
+							<li>Glossary
+							<li>Index
+							<li>Acknowledgements
+							<li>Bibliography
+						</ul>
+						
+						<div class="note">
+						This is a skeleton of the document structure. You can see this implemented in the current <a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/OpsRookieBooks/">rookie book</a> .tex files.
+						</div>
+
+					<h3 id="file_names">File Names</h3>
+
+						<ul id="list" class="indent">
+							<li>The book tex file should be in the format RookieBookTeX.tex 
+							<br /><b>ie. switchyard.tex</b></li>
+							<li>Regular chapter files should be named with an abbreviated form of the title followed by the chapter title, separated by an underscore
+							<br /><b>ie. sy_controls.tex</b></li>
+							<li>For appendicies add an "_a"
+							<br /><b>ie. sy_maps_a.tex</b></li>
+						</ul>
+						
+					<h3 id="basic_doc">Basic Document</h3>
+					
+						<p>This is a very basic document that will print something that looks like:<br />
+						<br />
+						<center><b>This</b> is a one page <i>document</i>!</center><br /></p>
+					
+						<div class="center">
+							<table class="example">
+								<tbody>
+									<tr>
+										<td style="border-right:2px black solid;padding-right:1em;">
+<span class="latex">\documentclass{book}
+
+    \usepackage{}
+	
+    \begin{document}
+	
+        \textbf{This} is a one page \textit{document}!
+		
+    \end{document}</span>
+										</td>
+										<td style="padding-left:2em;">
+											&larr; <b>Defines the type of document</b><br />
+											<br />
+											&larr; <b>Defines the style of the document</b><br />
+											<br />
+											&larr; <b>Begins content input</b><br />
+											<br />
+											&larr; <b>Content</b><br />
+											<br />
+											&larr; <b>Ends content input</b>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					
+					<h3 id="editing">Editing</h3>
+
+						<p>Edit as you normally would edit a document with any text editor. <br />
+						I prefer to right click and edit the file I want with Notepad++. <br />
+						CTRL-S to save, frequently!</p>
+						
+						<div class="note">
+						I encourage you to learn these methods through experience. Please feel free to look at all the rookie book documents. There is a TemplateTeX folder that is fair game to edit. Play with all these files. 
+						</div>
+						
+					<h3 id="compiling_pdf"><a name="compiling">Compiling a PDF</a></h3>
+					
+						<p>Knowing how to output a product will be necessary in learning LaTeX. There are a couple of simple methods for doing this.</p>
+					
+						<h4 id="latex_compile_script">LaTeX Compile Script</h4>
+						
+							<p>Navigate to <a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/tools/">Y:\Public\rookiebooks\tools</a><br />
+							You can open the file "<a href="file://///beamssrv1.fnal.gov/operations.bd/Public/rookiebooks/tools/pdfLaTeXcompiler.bat">pdfLaTeXcompiler</a>" from here<br />
+							Or drag the link to your desktop</p>
+						
+						<h4 id="notepad_latex_script">Notepad++ to LaTeX Compile Script</h4>
+
+							<p>Open Notepad++<br />
+							Open the menu RUN > RUN... (or F5)<br />
+							Input the following into the file prompt</p>
+							<div class="path">\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\tools\notepad2latex.bat "$(CURRENT_DIRECTORY)" "$(NAME_PART)"
+							</div><br />
+							<p>Click SAVE...<br />
+							Name the shortcut and assign a shortcut key</p>
+							
+						<div class="note">
+						For detailed information on this script and others look at the <a href="README-admin.html">Administrative Tasks for LaTeX Rookie Books</a>
+						</div>
+
+						<h4 id="compiling">Compiling</h4>
+							<p class="list">To compile a document open the main .tex file<br />
+							This can be found in the main folder of the book you are working on<br />
+							Once this file is open use the compile script of your choice<br />
+							This will open a Windows CMD prompt*<br />
+							Be patient, as this may take up to a minute<br />
+							After it is complete it will produce a PDF for you**</p>
+							
+							<div class="note">
+							*If you are using the pdfLaTeXcompiler, at this point you must choose which book to compile
+							</div>
+							<div class="note">
+							**After the compiler has completed the script will ask if you would like to commit. For now just say NO. We will talk about <a href="#git_backup">committing</a> later.
+							</div>
+
+				<h2 id="basic_latex">Basic LaTeX Commands and Syntax</h2>
+
+					<h3 id="spaces">Spaces</h3>
+
+						<p>"Whitespace" characters, such as blank or tab, are treated uniformly as "space" by LaTeX. Several consecutive whitespace characters are treated as one space". Whitespace at the start of a line is generally ignored, and a single line break is treated as "whitespace." An empty line between two lines of text defines the end of a paragraph. Several empty lines are treated the same as one empty line. The text	below is an example. On the left hand side is the text from the input file, and on the right hand side is the formatted output.</p>
+						
+						<table class="example">
+							<tbody>
+								<tr>
+									<td style="border-right:2px black solid;padding-right:2em;">
+<span class="latex">It does not matter whether you
+enter one or several        spaces
+after a word.
+
+An empty line starts a new
+paragraph.</span>
+									</td>
+									<td style="padding-left:2em;">
+										It does not matter whether you enter one or<br />
+										several spaces after a word. <br />
+										An empty line starts a new paragraph.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					<h3 id="reserved_chars">Reserved Characters</h3>
+
+						<p>Certain characters are reserved for LaTeX commands and need to be "escaped" in order to be displayed as text. To escape a reserved character, allowing it to be printed as text in your document, prefix the character with a backslash:</p>
+
+						<p class="latex">\# \$ \% \^ \& \_ \{ \} \~ \textbackslash{}</p>
+						
+						<pre># $ % ^ &amp; _ { } ~ \</pre>
+
+					<h3 id="notes_quotes">Notes on Quotes</h3>
+
+						<p>" <span class="latex">`</span> " or " <span class="latex">``</span> " (tilde key) should be used for left quotes <br />
+						" <span class="latex">'</span> " or " <span class="latex">''</span> " (single apostrophe key) should be used for right quotes</p>
+
+					<h3 id="">Syntax</h3>
+					
+						<p>All LaTeX commands begin with a \ followed by the command name which is followed by the content the command affects in between {}.<br />
+						<br />
+						ie. \bf{BOLD FACE} &rarr; <b>BOLD FACE</b></p>
+						
+						<h4 id="environments">Environments</h4>
+						
+							<p>Environments change the way a small piece of a document is formatted.</p>
+							<h5>Lists:</h5>
+<span class="latex">    \begin{itemize}
+        \item
+        \item
+        \item
+    \end{itemize}</span><br />
+<br />
+							<h5>Figures:</h5>
+<span class="latex">    \begin{figure}
+        \includegraphics{filename}
+    \end{figure}</span><br />
+<br />
+							<h5>Math:</h5>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;Inline equation - $...$<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;Stand alone equations - $$...$$</p>
+						
+					<h3 id="common_commands">Common Commands</h3>
+
+						<p class="list">
+						Comments may be placed in LaTeX by starting a line with a %<br />
+						\chapter{chapter_title} (defines a chapter) <br />
+						\section{section_title} (defines a section) <br />
+						\subsection{subsection_title} (defines a subsection) <br />
+						\subsubsection{subsubsection_title} (defines a subsubsection) <br />
+						\label{item:item_title} (labels anything for reference)
+						</p>
+						<p class="list">
+							<ul class="indent">
+								<li>items
+								<ul>
+									<li>chap (chapters) 
+									<li>fig (figures) 
+									<li>tab (tables) 
+									<li>eq (equation)
+								</ul>
+							</ul>
+						</p>
+						<p class="list">
+							~\ref{item:item_title} (references any label) <br />
+							\footnote{footnote} (Add Footnote) <br />
+							\marginpar{margin_notes} (Add Margin Notes) <br />
+							\textbf{bold_text} (Bold Text) <br />
+							\textit{italicised_text} {Italicised Text} <br />
+							\textcolor{color}{text} (Color Text) <br />
+							\href{url}{text} (Add a Link) <br />
+							\begin{environment}
+						</p>
+						<p class="list">
+							<ul class="indent">
+								<li><a href="#environments">environments</a>
+								<ul>
+									<li>figure (Figure, usually images) 
+										<ul><li>\caption[short caption for List of Figures]{caption_text} </ul>	
+									<li>itemize (Bulleted List) 
+										<ul><li>\item list_item </ul>
+									<li>enumerate (Numbered List) 
+										<ul><li>\item list_item </ul>
+									<li>table
+										<ul><li>\caption[short caption for List of Tables]{caption_text} </ul>
+									<li>equation (Math Environment)
+								</ul>
+							</ul>
+						</p>
+						<p class="list">
+						\end{environment} <br />
+						\cite{bib_key} (References source in citations.bib) <br />
+						\index{index_key} (Identifies and item for the index)
+						</p>
+					
+						<h4 id="references">References</h4>
+							<p class="list">
+							\figref{"figure key"}<span style="display:block;font-style:italic;float:right;">Figure 7.1</span> <br />
+							\equref{"equation key"}<span style="display:block;font-style:italic;float:right;">Equation 2.3</span> <br />
+							\chapref{"chapter key"}<span style="display:block;font-style:italic;float:right;">Chapter 6</span> <br />
+							\secref{"section key"}<span style="display:block;font-style:italic;float:right;">Section 1.1.1</span> <br />
+							\apref{"appendix key"}<span style="display:block;font-style:italic;float:right;">Appendix B</span></p>
+							
+						<h4 id="typical_fig"><center>Typical Reference</center></h4>
+						
+							<div class="center">
+								<table class="example">
+									<tbody>
+										<tr>
+											<td style="border-right:2px black solid;padding-right:0em;">
+<span class="latex">\begin{figure}[!htb]
+    \includegraphics[width=0.85\fp]{acc-map}
+    \caption{Layout of the accelerators at Fermilab}
+    \label{fig:acc-map}
+\end{figure}
+
+The layout of the machines, including the beamlines
+that connect them to one another, should be studied
+in detail. \figref{fig:acc-map} contains a minimal
+amount of information, but more will be added as
+the machines are introduced.</span>
+											</td>
+											<td style="padding-left:2em;">
+												<img src="README/img/acc.png"><br />
+												The layout of the machines, including the beamlines that connect<br />
+												them to	one another, should be studied in detail. <i>Figure 4.1</i><br />
+												contains a minimal amount of information, but more will be<br />
+												added as the machines are introduced.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+						<h4 id="typical_fig"><center>Typical Figure</center></h4>
+						
+							<div class="center">
+								<table class="example">
+									<tbody>
+										<tr>
+											<td style="border-right:2px black solid;padding-right:0em;">
+<span class="latex">\begin{figure}[!htb]
+\centering
+    \includegraphics[width=0.9\linewidth]{RFcav}
+    \caption{Simple ``pillbox'' RF Cavity.}
+    \label{fig:RFcav}
+\end{figure}</span>
+											</td>
+											<td style="padding-left:2em;">
+												<img src="README/img/fig.png">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+						<h4 id="typical_equ"><center>Typical Equation</center></h4>
+						
+							<div class="center">
+								<table class="example">
+									<tbody>
+										<tr>
+											<td style="border-right:2px black solid;padding-right:3em;">
+<span class="latex">\begin{equation} \label{eq:Lorentz}
+    \vec{F}=q(\vec{E}+\vec{v} \times \vec{B})
+\end{equation}</span>
+											</td>
+											<td style="padding-left:2em;">
+												<img src="README/img/equ.png">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					
+						<h4 id="typical_tab"><center>Typical Table</center></h4>
+						
+							<div class="center">
+								<table class="example">
+									<tbody>
+										<tr>
+											<td style="border-right:2px black solid;padding-right:0em;">
+<span class="latex">\begin{table}[H] 
+    \centering 
+    \begin{tabular}{| l | c |} 
+        \hline 
+        Source Output Particle Beam & Negative Hydrogen ions (H-) \\ \hline 
+        Source Output Energy & \kev{35} \\ \hline 
+        Source Output beam current & \ma{65} \\ \hline 
+        RFQ Input Energy & \kev{35} \\ \hline 
+        RFQ Output Energy & \kev{750} \\ \hline 
+        RFQ RF frequency & \Mhz{201.24} \\ \hline 
+        Beam Current into Linac & \ma{45} \\ \hline 
+        Device prefix & L: \\ \hline 
+    \end{tabular} 
+    \caption[Pre-Accelerator Machine Parameters]{} 
+    \label{tab:preacc-params} 
+    \vspace{-3em} 
+\end{table}</span>
+											</td>
+											<td style="padding-left:2em; text-align:center;">
+												<img src="README/img/tab.png">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+						<h4 id="margin_notes"><center>Margin Notes</center></h4>
+						
+							<div class="center">
+								<table class="example">
+									<tbody>
+										<tr>
+											<td style="border-right:2px black solid;padding-right:0em;">
+<span class="latex">\marginpar{\keyterm{Ferrite Tuners} are small coaxial
+waveguides loaded with ferrite that change
+the resonant frequency of RF cavities in synchrotrons.}</span>
+											</td>
+											<td style="padding-left:25em;display:block;width:13em">
+												<span style="color:#993333;font-style:italic;font-weight:bold;">Ferrite Tuners</span> are small coaxial waveguides loaded with ferrite that change the resonant frequency of RF cavities in synchrotrons.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+						<h4 id="glossary">Glossary References</h4>
+							<p>
+							Glossary terms are defined in the definitions.tex file. A typical definition is in the format below:
+<p class="latex" style="font-size:12px">\newglossaryentry{computer}
+{
+	name=computer,
+	description={is a programmable machine that receives input,
+				 stores and manipulates data, and provides
+				 output in a useful format},
+	plural=computers
+}</p>
+							<p>
+							Terms from the definitions files may be referenced with the following shortcuts:
+							</p>
+							<p class="list">
+							\gls<span style="display:block;font-style:italic;float:right;">lower case term</span> <br />
+							\Gls<span style="display:block;font-style:italic;float:right;">Upper Case Term</span> <br />
+							\glspl<span style="display:block;font-style:italic;float:right;">plural lower case terms</span> <br />
+							\Glspl<span style="display:block;font-style:italic;float:right;">Plural Upper Case Terms</span></p>
+								
+							<div class="note">
+							For more details on using the glossary command see the <a href="http://en.wikibooks.org/wiki/LaTeX/Glossary">wikibook entry.</a>
+							</div>
+						
+					<h3 id="custom_commands">Custom Commands</h3>
+					
+						<p class="list">
+						\keyterm{key_term} (Highlight defined terms) <span style="display:block;color:#993333;font-style:italic;font-weight:bold;float:right;">Key Term</span> <br />
+						\comment{comment_text} (Applies green italics) <span style="display:block;color:#009900;font-weight:bold;float:right;"><i>[Comment]</i></span> <br />
+						\e (E notation) <span style="display:block;float:right;">ie. \e{13e12} outputs 13<sub>E</sub>12</span><br />
+						\degree (Degree notation)  <span style="display:block;float:right;">\degree{360} outputs 360°</span> <br />
+						\fp (defines the full page width)
+						</p>
+						
+						<div class="indent">
+						<h4 id="experiment_names">Experiment Names</h4>
+							<p class="list">
+							\nova (displays NO&#957;A) <br />
+							\minerva (displays MINER&#957;A)
+							</p>
+						</div>
+						
+						<div class="indent">
+						<h4 id="si_units">SI Units</h4>
+							<p class="list">
+							\m (meter) <br />
+							\V (volt) <br />
+							\kv (kilovolt) <br />
+							\Mv (megavolt) <br />
+							\ma (milliampere) <br />
+							\A (ampere) <br />
+							\ev (electronvolt) <br />
+							\kev (kiloelectronvolt) <br />
+							\Mev (megaelectronvolt) <br />
+							\gev (gigaelectronvolt) <br />
+							\tev (teraelectronvolt) <br />
+							\hz (hertz) <br />
+							\khz (kilohertz) <br />
+							\Mhz (megahertz) <br />
+							\us (microsecond) <br />
+							\ms (millisecond) <br />
+							\s (second) <br />
+							<strong><span class="note">ie. \hz{12} outputs 12Hz</span></strong>
+							</p>
+						</div>
+
+					<h3 id="Math_equ">Mathmatical Equations</h3>
+
+						<p class="list">Inline Equations <span style="display:block;float:right;line-height:36px;"><span class="latex">\(...\)</span> or <span class="latex">$...$</span></span> <br />
+						Stand Alone Equations <span style="display:block;float:right;line-height:36px;"><span class="latex">\[...\]</span> or <span class="latex">$$...$$</span></span> <br />
+						In order to label or add captions to equations they must be in the equation "environment" this is done with <br />
+						</p>
+						
+						<p id="list" class="indent">
+						\begin{equation} <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;mathmathmaths <br />
+						\end{equation}
+						</p>
+
+				<h2 id="latex_tips">LaTeX Tips</h2>
+
+					<ul id="list" class="indent">
+						<li>If you are just editing text, I would recommend compiling only a draft version. This can be done by adding [draft] to the document class <br />
+						<br />
+						ie. \documentclass[draft]{book}* <br />
+						<div class="note">
+						*This will prevent pictures from rendering but save the space with place holders
+						</div></li>
+						<li>Don't forget to include a reference to your chapter in the book document.<br />
+						<br />
+						ie. \include{./tex/con_intro}</li>
+					</ul>
+				
+				<h2 id="git_backup">Git Backup</h2>
+				
+					<h3 id="git">Git Commits</h3>
+					
+						<p>Git is a repository for files. It handles backing-up our Rookie Book files. Git saves an instance of the project every time someone "commits" files to the server. When you commit you are grouping all changes since the last commit. Commits need your full name and email as well as a message to remind you and tell others what happened during that commit. The compile scripts will ask for this message. The script should produce a status to let you know if it was successful.<br />
+						<br />
+						That is ALL!</p>
+
+				<h2 id="troubleshooting">Troubleshooting</h2>
+
+					<h3 id="common_issues">Common Issues</h3>
+						<div class="datagrid">
+							<table>
+								<tbody>
+									<tr>
+										<td>No PDF Produced</td><td>The command prompt should stall with an error explaining why the PDF did not compile. If the command prompt is not present, there is a .log file that should hold the same information.</td>
+									</tr>
+									<tr>
+										<td>Runaway Argument</td><td>If the script stalls with a "runaway argument?" suggestion this means you have most likely forgotten to close an environment or curly bracket somewhere.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					
+					<h3 id="helpful_links">Helpful Links</h3>
+
+						<p><a href="https://www.google.com/search?q=LaTeX">Google is your friend!</a> <br />
+						<a href="http://en.wikibooks.org/wiki/LaTeX">LaTeX WikiBook</a> <br />
+						<a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX Math</a> <br />
+						<a href="http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management">LaTeX Bibliography</a> <br />
+						<a href="http://en.wikibooks.org/wiki/LaTeX/Indexing#Sophisticated_indexing">LaTeX Indexes</a> <br />
+						<a href="http://www.stdout.org/~winston/latex/latexsheet.pdf">LaTeX Cheat Sheet</a></p>
+				
+			</div>
+		</div>
+		
+		<a href="#" class="go-top">Back to Top</a>
+		
+		<script src="README/js/READMEbottom.js" type="text/javascript"></script>
+		
+	</body>
+</html>

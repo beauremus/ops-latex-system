@@ -1,0 +1,128 @@
+Change History
+--------------
+
+2012/03/27, luaotfload v1.26:
+    * Enable setting italic correction values by default
+    * Fix finding demibold italic fonts
+
+2011/04/21, luaotfload v1.25:
+    * Fix bug loading *.dfont fonts
+    * Misc. documentation fixes
+    * Fix the need to manually delete font cache when feature file is changed
+    * Hack to support Demi fonts
+
+2011/02/16, luaotfload v1.24:
+    * Fix infinite loop first time creating a name list
+
+2011/02/04, luaotfload v1.23:
+    * Fix a typo breaking fonts.names.scan()
+
+2011/01/25, luaotfload v1.22:
+    * Remove --database-dir and --sys options from mkluatexfontdb
+    * Provide a "luaotfload.patch_font" callback for on the fly patching of fonts
+    * Some documentation improvements
+
+2010/11/11, luaotfload v1.21:
+    * Adapt to luatexbase v3.0
+
+2010/10/16, luaotfload v1.20:
+    * Make cache directory creation more robust
+    * Fix GPOS mark placement in left-to-right direction
+    * Reject fonts missing 'names' table
+    * Sanitize color value before attempting to use it
+
+2010/09/12, luaotfload v1.19:
+    * fix LaTeX's detection (made Tikz fail under a non-LaTeX format)
+
+2010/07/15, luaotfload v1.18:
+    * fix for \overwithdelims and brothers
+
+2010/07/14, luaotfload v1.17:
+    * allow stylistic sets features in base mode
+    * don't scale percent math constants
+
+2010/07/12, luaotfload v1.16:
+    * support keys prefixed by "+", for compatibility with XeTeX
+    * remove the progress bar from mkluatexfontdb, it is of little use now
+    * minor code a documentation cleanups
+
+2010/06/28, luaotfload v1.15:
+    * anum feature did not work as advertised
+    * add system shipped TTC fonts on Mac OS X to the blacklist, until the
+      culprit ones are isolated
+
+2010/06/25, luaotfload v1.14:
+    * fix mkluatexfontdb which was broken in the last version
+    * support general font blacklisting feature
+    * temporally re-enable ttc fonts on Mac OS X
+    * make sure mkluatexfontdb in verbose mode prints font filename before
+      attempting to load it
+
+2010/06/24, luaotfload v1.13:
+    * fix typo in font cache path
+
+2010/06/18, luaotfload v1.12:
+    * populate MathConstants table for OpenType math fonts, now such fonts
+      can be really used in math mode.
+    * sync with ConTeXt beta 2010.06.18
+    * change cache dir to $TEXMFCACHE/luatex-cache/generic
+
+2010/06/09, luaotfload v1.11:
+    * when asking for a font with style that doesn't exist, we would return
+      nothing, now we fallback to the regular font
+
+2010/06/07, luaotfload v1.10:
+    * provide a fonts.names.scan(dir) function that temporally loads fonts
+      from the specified dir into the names database
+    * Log loaded font file before attempting to open it
+    * fix XeTeX's square brackets syntax so that it doesn't trigger database
+      update
+    * fix loading fonts with absolute path
+    * add \fontdimen8 support, for XeTeX compatibility
+    * be more verbose when updating the font database
+    * improve fonts.conf parsing
+    * make sure when a TFM font is requested we don't end up loading a non-TFM
+      font with a similar name instead
+    * Remove --fc-cache option from mkluatexfontdb.lua, since we no longer use
+      fontconfig tools
+    * misc. bug fixes
+
+2010/05/30, luaotfload v1.09:
+    * the last release didn't even load
+    * fix passing --destdir to mkluatexfontdb
+
+2010/05/28, luaotfload v1.08a:
+    * revert experimental code that was committed by mistake
+
+2010/05/28, luaotfload v1.08:
+    * fix misc. bugs with system fonts scanning
+    * parse fontconfig configuration directly, no longer dependant on 'fc-list'
+    * now if no font names database is found, luaotfload will generate it, also
+      it will force an update of the database if the asked font can not be
+      found
+    * avoid loading non-tfm fonts when the user asks for tfm font
+    * update the documentation
+    * blacklist .ttc and LastResort font on mac.
+    * sync with ConTeXt beta 2010.05.22
+    * fix attribute handling
+    * clarify license
+    * misc. bug fixes
+
+2010/05/10, luaotfload v1.07:
+    * using the new luatexbase package
+    * synchronizing with latest ConTeXt stable 2010.05.08
+    * adding support for microtypography
+    * adding support for color and transparency
+    * adding a script to generate a font database with TeX and system fonts
+    * more verbose log file
+
+2010/02/07, luaotfload v1.06a:
+    * more complete tlig and trep
+    * defaults options changed to "+ccmp;+locl;+rlig;+liga;+clig;+kern;
+         +mark;+mkmk;"
+    * supporting windows absolute path
+
+2009/12/01, luaotfload v1.06:
+    * synchronizing with ConTeXt stable 2009.11.26
+    * adding backward compatibility with LuaTeX 0.40.6
+
