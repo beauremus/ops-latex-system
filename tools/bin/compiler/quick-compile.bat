@@ -12,29 +12,16 @@ pushd %2
 
 :: Run Cleanup
 call:cleanup
-
-:: Run pdflatex -> bibtex -> pdflatex -> pdflatex
+ 
+:: Run pdflatex
 %pdf% %1
-::%pdf% %1
-
-:: If you are using bibliography the following will run bibtex
-%bib% %1
-
-:: If you are using glossaries the following will run makeglossaries
-%ind% -s %1.ist -t %1.glg -o %1.gls %1.glo
-
-:: If you are using acronym option for glossaries the following will run makeglossaries
-%ind% -s %1.ist -t %1.alg -o %1.als %1.acn
-
-:: If you are using makeidx the following will run makeindex on .idx and creates .ind
-%ind% %1
 
 :: Auxiliary pdflatex run to make sure everything is accounted for
-%pdf% %1
+::%pdf% %1
 
 :: Run Cleanup
 call:cleanup
-
+ 
 :: START Acrobat
 START "" %1.pdf
 goto eof

@@ -1,55 +1,22 @@
+::
+::Take input and compile with pdfLaTeX
+::
+
+:: Don't print script to screen
 @ECHO OFF
 
-set HOME=Y:\Public\rookiebooks
-set comp=Y:\Public\rookiebooks\tools\bin\compiler\compile.bat
-set git="\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\GitPortable\cmd\git.exe"
+:: Variables
+set HOME="\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\OpsRookieBooks"
+set comp="\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\tools\bin\compiler\compile.bat"
+set quick="\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\tools\bin\compiler\quick-compile.bat"
+set commit="\\beamssrv1.fnal.gov\operations.bd\Public\rookiebooks\tools\bin\git\commit-push.bat"
 
-cd /D %HOME%
-
-if exist %HOME%\OpsRookieBooks (
-cd OpsRookieBooks
-goto select
-) else (
-goto :bad
-)
-
-:bad
-echo Git directory does not exist, run pull script
-pause
-goto EOF
-
-:commit-question
-set /p commit=Would you like to commit your changes (Y/N)?
-if %commit%==Y (goto add)
-if %commit%==y (goto add)
-if %commit%==N (goto EOF)
-if %commit%==n (goto EOF)
-echo Please choose Y or N
-goto commit-question
-
-:add
-cd %HOME%\OpsRookieBooks
-%git% add -A
-%git% status
-goto commit
-
-:commit
-set /p message=Enter commit message: 
-set /p author=Enter your full name:
-set /p email=Enter your FNAL email: 
-%git% commit -m "%message%" --author="%author% <%email%>"
-echo Your added files have been commited.
-goto push
-
-:push
-%git% push origin master
-echo Your commited files have been uploaded to the server
-pause
-goto EOF
+pushd %HOME%
 
 :select
 SET index=1
 
+cls
 echo Please choose a document to compile
 
 SETLOCAL ENABLEDELAYEDEXPANSION
@@ -77,14 +44,29 @@ ECHO selected file name: %file_name%
 cd %file_name%
 setlocal disableDelayedExpansion
 for /f "delims=" %%A in ('forfiles /m *.tex /c "cmd /c echo @FNAME"') do (
-call %comp% %%A
+call :compile-question %%A
 )
-cls
-echo PDF compiled successfully!
-pause
-GOTO :commit-question
+goto :eof
 
 :RESOLVE
 SET file_name=%1
-GOTO :EOF
+goto compile
 :~0,-9%
+
+:compile-question
+set /p compile=Would you like to do a quick compile (Q) or a full compile (F)?
+if %compile%==Q (call %quick% %1
+goto commit)
+if %compile%==q (call %quick% %1
+goto commit)
+if %compile%==F (call %comp% %1
+goto commit)
+if %compile%==f (call %comp% %1
+goto commit)
+echo Please choose Q or F
+goto compile-question
+
+:commit
+call %commit%
+popd
+goto :eof
